@@ -1,0 +1,39 @@
+Q1
+tuple1 = ('hp','Lenovo','acer','dell')
+print(len(tuple1))
+
+Q2
+tuple1 = (1,2,3,4,5,6)
+g = int(max(tuple1))
+h = int(min(tuple1))
+print("the maximum value in tuple is " , g)
+print("the minimum value in tuple is " , h)
+
+Q4
+setx = set(1,2,3,4,5)
+sety = set(5,6,7,8,9)
+setb = sety - setx
+print(setb)
+setc = setx & sety
+print(setc)
+
+Q5
+dict = {'name': '','age':'','class': '', 'marks':'' }
+input(dict['name']))
+input(dict['age']))
+input(dict['class']))
+input(dict['marks']))
+u = input(dict*10)
+print(u)
+
+Q6
+dict = {'name': '','age':'','class': '','marks':'' }
+input(dict['name']))
+input(dict['age']))
+input(dict['class']))
+input(dict['marks']))
+u = input(dict*10)
+print(u)
+print(sort(dict['marks']))
+
+Q7
