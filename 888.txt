@@ -1,0 +1,32 @@
+#1
+
+JSON stands for JavaScript Object Notation.	XML stands for eXtensible Markup Language.
+JSON is simple to read and write.	XML is less simple than JSON.
+JSON is easy to learn.	XML is less easy than JSON.
+JSON is data-oriented.	XML is document-oriented.
+JSON doesn't provide display capabilities.	XML provides the capability to display data because it is a markup language.
+JSON supports array.	XML doesn't support array.
+JSON is less secured than XML.	XML is more secured.
+#2
+import socket
+
+addr1 = socket.gethostbyname('google.com')
+addr2 = socket.gethostbyname('yahoo.com')
+
+print(addr1, addr2)
+
+#3
+
+GET requests are the most common and widely used methods in APIs and websites.
+POST requests are used to send data to the API sever to create or udpate a resource. 
+PUT requests are used to send data to the API to create or update a resource.
+DELETE method is exactly as it sounds: delete the resource at the specified URL.
+
+#4
+API is a part of library which defines how an application communicates with external code
+.
+API can be written in any language.
+Library is written in same language which is a collection of all the functionalities required for the use case.
+For example : Numpy is a library of Python, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
+
+#5
