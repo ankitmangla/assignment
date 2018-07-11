@@ -1,0 +1,95 @@
+#1
+from tkinter import *
+root=Tk()
+root.title("window")
+root.geometry('300x200')
+label=Label(root,text="Hello everyone")
+label.pack()
+button=Button(root,text='Exit',command=root.destroy)
+button.pack()
+root.mainloop()
+
+
+
+
+#2
+from tkinter import *
+
+root=Tk()
+root.title("Laugh")
+root.geometry('300x200')
+root.configure(background='green')
+
+
+def print_msg():
+   label=Label(root,text="Welcome to the king of iron fist", font="Arial 21", bg='yellow')
+   label.pack()
+
+label=Label(root,text="Press Button ", font="Arial 16", bg='red')
+label.pack()
+
+b1=Button(root,text='Print',command=print_msg)
+b1.pack(side=LEFT)
+
+b2=Button(root,text='Exit',command=root.destroy)
+b2.pack(side=RIGHT)
+
+root.mainloop()
+
+
+
+
+#3
+from tkinter import *
+
+root=Tk()
+root.title("laugh!!")
+root.geometry('300x200')
+root.configure(background='green')
+
+
+def print_msg():
+   label=Label(root,text="Welcome to the king of iron fist.", font="Arial 21", bg='yellow')
+   label.pack()
+
+label=Label(root,text="Press Button", font="Arial 16", bg='red')
+label.pack()
+
+b1=Button(root,text='Print',command=print_msg)
+b1.pack(side=LEFT)
+
+b2=Button(root,text='Exit',command=root.destroy)
+b2.pack(side=RIGHT)
+
+root.mainloop()
+
+
+
+#4
+from tkinter import *
+
+root=Tk()
+root.title("Laugh!!")
+root.geometry('300x200')
+root.configure(background='green')
+
+l1=Label(root,text="Enter Your Name Below:")
+l1.pack()
+
+e1=Entry(root)
+e1.pack()
+
+def print_msg():
+   name=e1.get()
+   print("User name: ",name)
+   txt="Welcome "+name
+   label=Label(root,text=txt, font="Courier 16 bold underline", bg='red')
+   label.pack(fill=X)
+
+b1=Button(root,text='Submit',activebackground='green' , activeforeground='white',command=print_msg)
+b1.pack(fill=X,side=TOP)
+
+b2=Button(root,text='Exit',activebackground='green' , activeforeground='white',command=root.destroy)
+b2.pack(fill=X,side=BOTTOM)
+
+root.mainloop()
