@@ -1,0 +1,84 @@
+#1
+from tkinter import *
+
+root=Tk()
+root.title("User List!")
+root.geometry('450x450')
+
+d={'Aura':7898485523,
+   'Laura':9801234456,
+   'Alex':8890318789,
+   'Ayush':7799331450,
+   'Ganesh':7412541254,
+   'Trivedi':7584587559,
+   'Cukoo':7807874153}
+
+f1=Frame(root)    
+f1.pack()
+
+sb=Scrollbar(f1)
+sb.pack(side=RIGHT, fill=Y)
+
+listL=Listbox(f1,yscrollcommand=sb.set)
+
+for i in d:
+   listL.insert(END,i)
+
+listL.pack(side=LEFT, fill=X)
+sb.configure(command=listL.yview)
+
+root.mainloop()
+
+
+
+
+#Q2
+from tkinter import *
+
+root=Tk()
+root.title("User List!")
+root.geometry('450x450')
+
+d={'Aura':7898485523,
+   'Laura':9801234456,
+   'Alex':8890318789,
+   'Ayush':7799331450,
+   'Ganesh':7412541254,
+   'Trivedi':7584587559,
+   'Cukoo':7807874153}
+
+f1=Frame(root)    
+f1.pack()
+
+sb=Scrollbar(f1)
+sb.pack(side=RIGHT, fill=Y)
+
+listL=Listbox(f1,yscrollcommand=sb.set)
+
+for i in d:
+   listL.insert(END,i)
+
+listL.pack(side=LEFT, fill=X)
+sb.configure(command=listL.yview)
+
+def addval():
+     d[k.get()]=v.get()
+     listL.insert(END,k.get())
+
+#creating GUI for user input
+f=Frame(root)
+f.pack()
+labelL=Label(f,text="Name ")
+labelL.grid(row=0, column=0)
+labelL=Label(f,text="Mobile No.")
+labelL.grid(row=1,column=0)
+
+k=Entry(f)
+k.grid(row=0,column=1)
+v=Entry(f)
+v.grid(row=1,column=1)
+
+b=Button(f,text="Add in Dictionary",command=addval)
+b.grid(row=2,column=1)
+
+root.mainloop()
